@@ -61,6 +61,7 @@ schedule.scheduleJob("*/10 * * * * *", async () => {
   const payload = JSON.stringify({
     title: "定时通知",
     body: `这是一个定时推送的通知，发送时间：${timestamp}`,
+    url:'https://www.baidu.com/'
   })
 
   console.log(`开始发送定时通知：${timestamp}`)
